@@ -4,53 +4,239 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap Regal</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 </head>
 <body>
-
-    <nav class="navbar text-light p-0 w-100 d-flex flex-row align-items-center justify-content-start">
-        <a href="#" class="navbar-brand regel text-light py-3 px-5 m-0 d-flex align-items-center justify-content-center bg-danger">
-            <div class="logo-icon">
-                <i class="bi bi-command"></i>
-                <span class="h4 font-weight-bold">Regel</span>
+    <div class="main-wrapper">
+        <nav class="navbar w-100 text-dark m-0 main-nav bg-light text-center d-flex justify-content-between fixed-top p-0">
+            <div class="container-fluid w-100 d-flex flex-row align-items-center justify-content-between bg-light m-0 p-0">
+                
+                <div class="col-2 d-flex main-brand flex-row justify-content-center align-items-center m-0 p-3 bg-primary">
+                    <div class="main-logo text-light d-flex flex-row align-items-center justify-content-center">
+                        <div class="icon mr-2">
+                            <i class="bi bi-command h4"></i>
+                        </div>
+                        <span class="font-weight-bold h4 p-0 m-0">Regal</span>
+                    </div>
+                </div>
+                <div class="col-5 d-flex flex-row align-items-center p-3 nav-middle">  
+                    
+                    <div class="sidenav-collapse mr-5">
+                        <i class="bi bi-list lead border border-top-0 border-left-0 border-bottom-0  pr-3"></i>
+                    </div>
+                    <div class="search-items d-flex flex-row align-items-center">
+                        <div class="icon mr-2">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <input type="text" name="" id="" placeholder="Search Projects" class="input-search">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <ul class="navbar-nav d-flex flex-row align-items-center justify-content-center nav-end">
+                        <li class="nav-item d-flex flex-row align-items-center mx-4">
+                            <button class="btn btn-primary text-light d-flex flex-row align-items-center">
+                                <div class="icon">
+                                    <i class="bi bi-plus h5 font-weight-bold"></i>
+                                </div>
+                                <span class="font-weight-bold h6 p-0 m-0">Create New</span>
+                            </button>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <button class="icon lead no-style-btn" data-toggle="dropdown">
+                                <i class="bi bi-upload"></i>
+                                <div class="dropdown-list">
+                                    <h5 class="header-text">Messages</h5>
+                                    <a href=" " class="drop-item">
+                                        <div class="msg-img">
+                                            <img src="./assets/images/profiles/profile3.jpg" alt="" srcset="" class="img-fluid msg-img-profile">       
+                                        </div>
+                                        <div class="msg-content">
+                                            <div class="msg-sender-name">Ram Sharma</div>
+                                            <div class="msg-header">
+                                                Metting has been postponed.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href=" " class="drop-item">
+                                        <div class="msg-img">
+                                            <img src="./assets/images/profiles/profile1.jpg" alt="" srcset="" class="img-fluid msg-img-profile">       
+                                        </div>
+                                        <div class="msg-content">
+                                            <div class="msg-sender-name">Gita Basnet</div>
+                                            <div class="msg-header">
+                                                Please send updates to file.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href=" " class="drop-item">
+                                        <div class="msg-img">
+                                            <img src="./assets/images/profiles/profile2.jpg" alt="" srcset="" class="img-fluid msg-img-profile">       
+                                        </div>
+                                        <div class="msg-content">
+                                            <div class="msg-sender-name">Shiva Shrestha</div>
+                                            <div class="msg-header">
+                                                New product launch.
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </button>
+                            
+                        </li>
+                        <li class="nav-item mx-3">
+                            <button class="icon lead no-style-btn">
+                                <i class="bi bi-gear"></i>
+                            </button>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <button class="icon lead no-style-btn">
+                                <i class="bi bi-grid"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>            
             </div>
-        </a>
-        <button class="navbar-toggler hamburger text-dark pr-3 mx-5 border border-dark border-top-0 border-left-0 border-bottom-0 rounded-0" data-toggle="collapse" data-target="#nav" type="button">
-            <span class="bi bi-list h4"></span>
-        </button>
-        <div class="nav-wrapper d-flex flex-row w-75 py-2 align-items-center justify-content-between">
-            <div class="container">
-                <ul class="navbar-nav d-flex flex-row align-items-center justify-content-center">
-                    <li class="nav-item mr-2 d-flex align-items-center justify-content-center">
-                        <i class="bi bi-search text-dark"></i>
-                    </li>
-                    <li class="nav-item d-flex flex-row align-items-center justify-content-center">
-                        <input type="text" name="" id="" class="search-items" placeholder="Search Projects">
-                    </li>
-                </ul>
-                <ul class="navbar-nav text-dark w-50 d-flex flex-row justify-content-around align-items-center text-center">
-                    <li class="nav-item">
-                        <button class="btn btn-primary text-light font-weight-bold d-flex align-items-center border rounded">
-                            <i class="bi bi-plus h4 font-weight-bold m-0"></i>
-                            Create New
-                        </button>
-                    </li>
-                    <li class="nav-item">
-                        <i class="bi bi-chat-left-dots h4 font-weight-bold"></i>
-                    </li>
-                    <li class="nav-item">
-                        <i class="bi bi-gear h4 font-weight-bold"></i>
-                    </li>
-                    <li class="nav-item">
-                        <i class="bi bi-ui-checks-grid h4 font-weight-bold"></i>
-                    </li>
-                </ul>
+        </nav>
+        <div class="container-fluid w-100 row main-layout p-0 m-0">
+            <div class="col-2 bg-primary mr-0 p-0 side-nav">
+                <div class="sidebar-nav">
+                    
+                    <div class="developer-profile d-flex flex-column justify-content-center align-items-center mt-4">
+                        <div class="dev-profile-pic">
+                            <img src="./assets/images/dev/dev1.jpg" class="img-fluid">
+                        </div>
+                        <div class="dev-details text-center mt-2">
+                            <p class="dev-name  font--weight-bolder">Edward Spencer<br>
+                                Developer
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="nav-list py-2 px-3 d-flex flex-column align-items-start justify-content-center" type="none">
+                        <li class="nav-items  w-100 p-3 border border-primary rounded d-flex flex-row justify-content-start align-items-center">
+                            <div class="nav-links">
+                                <div class="icon">
+                                    <i class="bi bi-box h5 mr-2"></i>
+                                    <span class="font-weight-bold">Dashboard</span>
+                                </div>
+                            </div>
+                            <div class="active"></div>
+                        </li>
+                        <li class="nav-items  w-100 p-3 border border-primary rounded d-flex flex-row justify-content-start align-items-center">
+                            <div class="nav-links">
+                                <div class="icon">
+                                    <i class="bi bi-disc h5 mr-2"></i>
+                                    <span class="font-weight-bold">UI Elements</span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </div>
+                            </div>
+                        </li>   
+                        <li class="nav-items  w-100 p-3 border border-primary rounded d-flex flex-row justify-content-start align-items-center">
+                            <div class="nav-links">
+                                <div class="icon">
+                                    <i class="bi bi-file-earmark h5 mr-2"></i>
+                                    <span class="font-weight-bold w-100">Form Elements</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-items  w-100 p-3 border border-primary rounded d-flex flex-row justify-content-start align-items-center">
+                            <div class="nav-links">
+                                <div class="icon">
+                                    <i class="bi bi-pie-chart h5 mr-2"></i>
+                                    <span class="font-weight-bold">Charts</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-items  w-100 p-3 border border-primary rounded d-flex flex-row justify-content-start align-items-center">
+                            <div class="nav-links">
+                                <div class="icon">
+                                    <i class="bi bi-table h5 mr-2"></i>
+                                    <span class="font-weight-bold">Tables</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-items  w-100 p-3 border border-primary rounded d-flex flex-row justify-content-start align-items-center">
+                            <div class="nav-links">
+                                <div class="icon">
+                                    <i class="bi bi-emoji-smile h5 mr-2"></i>
+                                    <span class="font-weight-bold">Icons</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-items  w-100 p-3 border border-primary rounded d-flex flex-row justify-content-start align-items-center">
+                            <div class="nav-links">
+                                <div class="icon">
+                                    <i class="bi bi-person-circle h5 mr-2"></i>
+                                    <span class="font-weight-bold">User Pages</span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-items  w-100 p-3 border border-primary rounded d-flex flex-row justify-content-start align-items-center">
+                            <div class="nav-links">
+                                <div class="icon">
+                                    <i class="bi bi-laptop h5 mr-2"></i>
+                                    <span class="font-weight-bold">Documentation</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-10 p-0 m-0">
+                 <main class="main-section p-4">
+                    <div class="container ">
+                        <div class="header-text mt-3">
+                            <h4 class="font-weight-bold">Hi, welcome back!</h4>
+                            <p class="date">April 1, 2019</p>
+                        </div>
+                        <div class="charts-1 row my-4 p-0">
+                            <div class="col-3">
+                                <div class="row inner-row  h-50">
+                                    <div class="col-12 mb-2 bg-light border border-light rounded p-3">
+                                        <canvas id="myChart1" ></canvas>
+                                    </div>
+                                </div>    
+                                <div class="row inner-row h-50">
+                                    <div class="col-12 bg-light border border-light rounded p-3">
+                                        <canvas id="myChart2"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="col-wrapper px-2 py-1 border border-light h-100 rounded bg-light">
+                                    <canvas id="myChart3"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="charts-2 row p-0">
+                            <div class="col-4 p-0">
+                                <div class="col-wrapper px-2 py-1 border border-light rounded bg-light h-100">
+                                    <canvas id="myChart4"></canvas>
+                                </div>          
+                            </div>
+                            <div class="col-4">
+                                <div class="col-wrapper px-2 py-1 border border-light rounded bg-light h-100">
+                                    <canvas id="myChart5"></canvas>
+                                </div>
+
+                            </div>
+                            <div class="col-4 pl-0">
+                                <div class="col-wrapper px-2 py-1 border border-light rounded bg-light h-100">
+                                    <canvas id="myChart6"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </div>
         </div>
-    </nav>
+    </div>
+    <script src="./assets/js/chart.js"></script>
+    <script src="./assets/js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
