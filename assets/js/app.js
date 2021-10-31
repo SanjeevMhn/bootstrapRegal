@@ -1,14 +1,13 @@
 const sideBarMenus = document.querySelectorAll(".nav-items");
 const active = document.querySelector(".active");
 
-console.log(sidebar);
 sideBarMenus.forEach((side)=>{
     side.addEventListener("click",function(){
         if(!side.contains(active)){
             side.appendChild(active);
         }
     })
-})
+});
 
 // const sidebarCollapse = document.querySelector(".sidenav-collapse");
 // const mainBrand = document.querySelector(".main-brand");
