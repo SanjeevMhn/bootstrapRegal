@@ -20,13 +20,23 @@ body::before{
 
 
 .main-nav{
-    box-shadow: 240px -20px 35px #000;
+    box-shadow: 235px -20px 35px #000;
 
 }
 
 .main-layout{
     width: 100%;
 }   
+
+.main-logo{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-logo:hover{
+    color: #fff;
+    text-decoration: none;
+}
 
 .sidebar-nav{
     height: 100vh;
@@ -64,7 +74,28 @@ body::before{
     position: relative;
     z-index: 2;
     cursor: pointer;
+    border-bottom: 2px solid #fff;
 }
+
+.nav-items:hover:after{
+    display: block;
+}
+
+.nav-items::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    border-radius: 2px;
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    z-index: 100;
+    opacity: 0.4;
+    display: none;
+    z-index: 1;
+}
+
 .nav-items .active{
     height: 100%;
     width: 100%;
@@ -162,4 +193,48 @@ body::before{
 
 .dropdown-list .drop-item .msg-content .msg-header{
     font-size: 0.9rem;
+}
+
+.country-list{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+}
+
+.country-list th{
+    padding: 1.5rem;
+
+}
+
+.country-list td{
+    padding:  0.8rem;
+    border-bottom: 1px solid #000;
+}
+
+.country-list .table-header{
+    background-color: lightgray;
+}
+
+.rating-bar{
+   background-color: red;
+   width: 5rem;
+   position:  relative;
+   height: 0.75rem;
+   border-radius: 100vw;
+   background-color: lightgray;
+   overflow: hidden;
+}
+
+.rating-bar .rating-percent{
+    width:  80%;
+    height:  100%;
+    background-color: gold;
+}
+
+.bi-star-fill{
+    color: gold;
+}
+
+.bi-star{
+    color: lightgray;
 }

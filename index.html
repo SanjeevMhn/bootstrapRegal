@@ -16,12 +16,12 @@
             <div class="container-fluid w-100 d-flex flex-row align-items-center justify-content-between bg-light m-0 p-0">
                 
                 <div class="col-2 d-flex main-brand flex-row justify-content-center align-items-center m-0 p-3 bg-primary">
-                    <div class="main-logo border border-primary text-light d-flex flex-row align-items-center justify-content-center">
+                    <a href="#" class="main-logo border border-primary d-flex flex-row align-items-center justify-content-center">
                         <div class="icon mr-2">
                             <i class="bi bi-command h4"></i>
                         </div>
-                        <span class="font-weight-bold h4 p-0 m-0">Regal</span>
-                    </div>
+                        <span class="font-weight-bold h4 p-0 m-0 logo-name">Regal</span>
+                    </a>
                 </div>
                 <div class="col-5 d-flex flex-row align-items-center p-3 nav-middle">  
                     
@@ -102,7 +102,7 @@
             </div>
         </nav>
         <div class="container-fluid w-100 row main-layout p-0 m-0">
-            <div class="col-2 bg-primary mr-0 p-0 side-navh">
+            <div class="col-2 bg-primary mr-0 p-0 side-nav">
                 <div class="sidebar-nav">
                     
                     <div class="developer-profile d-flex flex-column justify-content-center align-items-center mt-4">
@@ -110,7 +110,7 @@
                             <img src="./assets/images/dev/dev1.jpg" class="img-fluid">
                         </div>
                         <div class="dev-details text-center mt-2">
-                            <p class="dev-name  font--weight-bolder">Edward Spencer<br>
+                            <p class="dev-name text-light font-weight-bolder">Edward Spencer<br>
                                 Developer
                             </p>
                         </div>
@@ -120,7 +120,7 @@
                             <div class="nav-links">
                                 <div class="icon">
                                     <i class="bi bi-box h5 mr-2"></i>
-                                    <span class="font-weight-bold">Dashboard</span>
+                                    <span class="font-weight-bold icon-text">Dashboard</span>
                                 </div>
                             </div>
                             <div class="active"></div>
@@ -129,24 +129,33 @@
                             <div class="nav-links">
                                 <div class="icon">
                                     <i class="bi bi-disc h5 mr-2"></i>
-                                    <span class="font-weight-bold">UI Elements</span>
-                                    <i class="bi bi-chevron-right"></i>
+                                    <span class="font-weight-bold icon-text">UI Elements</span>
+                                    <i class="bi bi-chevron-right ui-chevron-right">	</i>
+                                    <i class="bi bi-chevron-down ui-chevron-down d-none">	</i>
                                 </div>
+                                <ul type="circle" class="drop-down-list-1 p-3 mt-2 d-none">
+                                	<li class="drop-items font-weight-bold p-2">
+                                		Buttons
+                                	</li>
+                                	<li class="drop-items font-weight-bold p-2">
+                                		Typography
+                                	</li>
+                                </ul>
                             </div>
                         </li>   
                         <li class="nav-items  w-100 p-3 border border-primary rounded d-flex flex-row justify-content-start align-items-center">
                             <div class="nav-links">
                                 <div class="icon">
                                     <i class="bi bi-file-earmark h5 mr-2"></i>
-                                    <span class="font-weight-bold w-100">Form Elements</span>
+                                    <span class="font-weight-bold w-100 icon-text">Form Elements</span>
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-items  w-100 p-3 border border-primary rounded d-flex flex-row justify-content-start align-items-center">
+                        <li class="nav-items w-100 p-3 border border-primary rounded d-flex flex-row justify-content-start align-items-center">
                             <div class="nav-links">
                                 <div class="icon">
                                     <i class="bi bi-pie-chart h5 mr-2"></i>
-                                    <span class="font-weight-bold">Charts</span>
+                                    <span class="font-weight-bold icon-text">Charts</span>
                                 </div>
                             </div>
                         </li>
@@ -154,7 +163,7 @@
                             <div class="nav-links">
                                 <div class="icon">
                                     <i class="bi bi-table h5 mr-2"></i>
-                                    <span class="font-weight-bold">Tables</span>
+                                    <span class="font-weight-bold icon-text">Tables</span>
                                 </div>
                             </div>
                         </li>
@@ -162,7 +171,7 @@
                             <div class="nav-links">
                                 <div class="icon">
                                     <i class="bi bi-emoji-smile h5 mr-2"></i>
-                                    <span class="font-weight-bold">Icons</span>
+                                    <span class="font-weight-bold icon-text">Icons</span>
                                 </div>
                             </div>
                         </li>
@@ -170,8 +179,26 @@
                             <div class="nav-links">
                                 <div class="icon">
                                     <i class="bi bi-person-circle h5 mr-2"></i>
-                                    <span class="font-weight-bold">User Pages</span>
-                                    <i class="bi bi-chevron-right"></i>
+                                    <span class="font-weight-bold icon-text">User Pages</span>
+                                    <i class="bi bi-chevron-right ui-chevron-right-2"></i>
+                                    <i class="bi bi-chevron-down ui-chevron-down-2 d-none"></i>
+                                    <ul type="circle" class="drop-down-list-2 p-3 mt-2 d-none">
+                                			<li class="drop-items font-weight-bold p-2">
+                                				Login
+                                			</li>
+                                			<li class="drop-items font-weight-bold p-2">
+                                				Login2
+                                			</li>
+                                			<li class="drop-items font-weight-bold p-2">
+                                				Register
+                                			</li>
+                                			<li class="drop-items font-weight-bold p-2">
+                                				Register 2
+                                			</li>
+                                			<li class="drop-items font-weight-bold p-2">
+                                				Lockscreen
+                                			</li>
+                                		</ul>
                                 </div>
                             </div>
                         </li>
@@ -179,14 +206,14 @@
                             <div class="nav-links">
                                 <div class="icon">
                                     <i class="bi bi-laptop h5 mr-2"></i>
-                                    <span class="font-weight-bold">Documentation</span>
+                                    <span class="font-weight-bold icon-text">Documentation</span>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-10 p-0 m-0">
+            <div class="col-10 p-0 m-0 main-content">
                  <main class="main-section p-4">
                     <div class="container ">
                         <div class="header-text mt-3">
@@ -212,7 +239,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="charts-2 row p-0">
+                        <div class="charts-2 row p-0 mb-4">
                             <div class="col-4 p-0">
                                 <div class="col-wrapper px-2 py-1 border border-light rounded bg-light h-100">
                                     <canvas id="myChart4"></canvas>
@@ -230,8 +257,219 @@
                                 </div>
                             </div>
                         </div>
+
+                       	<div class="row bottom-tables">
+                       		<div class="col-9 bg-light border border-light rounded">
+                       			<div class="col-wrapper px-3 py-4">
+                       					<div class="header-text h5 font-weight-bold">
+                       						Top Sellers
+                       					</div>	
+                       					<table class="country-list" >
+                       						<tr class="table-header">
+                       							<th>Country</th>
+                       							<th>Revenue</th>
+                       							<th>Vs Last Month</th>
+                       							<th>Goal Reached</th>
+                       						</tr>
+	                       						<tr>
+                       							<td>
+                       								<span class="font-weight-bold h6">USA</span>
+                       							</td>
+                       							<td>
+                       								$981,908
+                       							</td>
+                       							<td>
+                       								<i class="bi bi-arrow-up text-success"></i>
+                       								<span class="text-success">+60%</span>
+                       							</td>
+                       							<td>
+                       								<div class="progress">
+                       									<div class="progress-bar" style="width: 25%;" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                       								</div>
+                       							</td>
+                       						</tr>
+
+                       						<tr>
+                       							<td>
+                       								<span class="font-weight-bold h6">China</span>
+                       							</td>
+                       							<td>
+                       								$600,987
+                       							</td>
+                       							<td>
+                       								<i class="bi bi-arrow-down text-danger"></i>
+                       								<span class="text-danger">-52%</span>
+                       							</td>
+                       							<td>
+                       								<div class="progress">
+                       									<div class="progress-bar" style="width: 35%;" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                       								</div>
+                       							
+                       							</td>
+                       						</tr>
+
+                       						<tr>
+                       							<td>
+                       								<span class="font-weight-bold h6">Canada</span>
+                       							</td>
+                       							<td>
+                       								$250,000
+                       							</td>
+                       							<td>
+                       								<i class="bi bi-arrow-up text-success"></i>
+                       								<span class="text-success">+90%</span>
+                       							</td>
+                       							<td>
+                       								<div class="progress">
+                       									<div class="progress-bar" style="width: 60%;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                       								</div>
+                       							
+                       							</td>
+                       						</tr>
+
+                       						<tr>
+                       							<td>
+                       								<span class="font-weight-bold h6">Cuba</span>
+                       							</td>
+                       							<td>
+                       								$120,000
+                       							</td>
+                       							<td>
+                       								<i class="bi bi-arrow-down text-danger"></i>
+                       								<span class="text-danger">-10%</span>
+                       							</td>
+                       							<td>
+                       								<div class="progress">
+                       									<div class="progress-bar" style="width: 15%;" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                       								</div>
+                       							
+                       							</td>
+                       						</tr>	
+
+                       							<tr>
+                       							<td>
+                       								<span class="font-weight-bold h6">Spain</span>
+                       							</td>
+                       							<td>
+                       								$520,000
+                       							</td>
+                       							<td>
+                       								<i class="bi bi-arrow-up text-success"></i>
+                       								<span class="text-success">30%</span>
+                       							</td>
+                       							<td>
+                       								<div class="progress">
+                       									<div class="progress-bar" style="width: 30%;" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                       								</div>
+                       							
+                       							</td>
+                       						</tr>	
+                       					</table>
+                       			</div>
+                       		</div>
+                       		<div class="col-3">
+                       			<div class="col-wrapper border-light rounded px-3 py-4 bg-light d-flex flex-column justify-content-start align-items-start">
+	                       			<div class="header-text">
+	                       				 <h6 class="font-weight-bold">Overall Rating</h6>
+	                       			</div>
+	                       			<div class="rating d-flex">
+	                       				<h5 class="font-weight-bold mr-2">4.3</h5>
+	                       				<div class="stars">
+	                       					<i class="bi bi-star-fill"></i>
+	                       					<i class="bi bi-star"></i>
+	                       					<i class="bi bi-star"></i>
+	                       					<i class="bi bi-star"></i>
+	                       					<i class="bi bi-star"></i>
+	                       				</div>
+	                       			</div>
+	                       			<span>Based on 189 reviews</span>
+	                       			<div class="star-reviews-table mt-2">
+	                       				
+	                       				<div class="reviwes d-flex justify-content-start align-items-center p-1">
+	                       					<div class="rate-number font-weight-bold p-0 m-0 h6 mr-2">5</div>
+	                       					<div class="star-fill mr-2">
+	                       						<i class="bi bi-star-fill m-0 p-0"></i>
+	                       					</div>
+	                       					<div class="rating-bar mr-2">
+	                       						<div class="rating-percent"></div>
+	                       					</div>
+	                       					<span class="percentage">80%</span>
+	                       				</div>
+
+	                       				<div class="reviwes d-flex justify-content-start align-items-center p-1">
+	                       					<div class="rate-number font-weight-bold p-0 m-0 h6 mr-2">4</div>
+	                       					<div class="star-fill mr-2">
+	                       						<i class="bi bi-star-fill m-0 p-0"></i>
+	                       					</div>
+	                       					<div class="rating-bar mr-2">
+	                       						<div class="rating-percent" style="width: 45%;"></div>
+	                       					</div>
+	                       					<span class="percentage">45%</span>
+	                       				</div>
+
+	                       				<div class="reviwes d-flex justify-content-start align-items-center p-1">
+	                       					<div class="rate-number font-weight-bold p-0 m-0 h6 mr-2">3</div>
+	                       					<div class="star-fill mr-2">
+	                       						<i class="bi bi-star-fill m-0 p-0"></i>
+	                       					</div>
+	                       					<div class="rating-bar mr-2">
+	                       						<div class="rating-percent" style="width: 30%;"></div>
+	                       					</div>
+	                       					<span class="percentage">30%</span>
+	                       				</div>
+
+	                       				<div class="reviwes d-flex justify-content-start align-items-center p-1">
+	                       					<div class="rate-number font-weight-bold p-0 m-0 h6 mr-2">2</div>
+	                       					<div class="star-fill mr-2">
+	                       						<i class="bi bi-star-fill m-0 p-0"></i>
+	                       					</div>
+	                       					<div class="rating-bar mr-2">
+	                       						<div class="rating-percent" style="width: 8%;"></div>
+	                       					</div>
+	                       					<span class="percentage">8%</span>
+	                       				</div>
+
+	                       				<div class="reviwes d-flex justify-content-start align-items-center p-1">
+	                       					<div class="rate-number font-weight-bold p-0 m-0 h6 mr-2">1</div>
+	                       					<div class="star-fill mr-2">
+	                       						<i class="bi bi-star-fill m-0 p-0"></i>
+	                       					</div>
+	                       					<div class="rating-bar mr-2">
+	                       						<div class="rating-percent" style="width: 2%;"></div>
+	                       					</div>
+	                       					<span class="percentage">1%</span>
+	                       				</div>
+
+	                       				<p class="font-weight-bold mt-3">Rating by category</p>
+	                       				<div class="review-category mt-n1 mb-4">
+	                       					<div class="cate-1">
+	                       						<span class="font-weight-bold">4.3</span>
+	                       						<i class="bi bi-star-fill" style="color: gold;"></i>
+	                       						<span>Work/Mangement</span>
+	                       					</div>
+
+	                       					<div class="cate-1">
+	                       						<span class="font-weight-bold">3.5</span>
+	                       						<i class="bi bi-star-fill" style="color: gold;"></i>
+	                       						<span>Salary/Culture</span>
+	                       					</div>
+	                       				</div>
+	                       			</div>
+                       			</div>
+                       		</div>
+                       	</div>
                     </div>
                 </main>
+
+                <footer class="main-footer w-100 bg-light p-3 d-flex justify-content-lg-between">
+                	<div class="copyright">
+                		<p class="m-0 p-0">Copyright @ xyz@yahoo.com</p>
+                		<p class="m-0 p-0">Distributed By: XYZ </p>
+                	</div>
+                	<div class="designed">
+                		<p>Designed By: <span class="text-primary">Sanjeev Maharjan</span></p>
+                	</div>
+                </footer>
             </div>
         </div>
     </div>
