@@ -238,3 +238,160 @@ body::before{
 .bi-star{
     color: lightgray;
 }
+
+.recent-activity-table{
+    table-layout: auto;
+}
+
+.recent-activity-table td{
+    padding: 0.6rem;
+    vertical-align: top;
+    margin-bottom: 2rem;
+}
+
+.recent-activity-table tr{
+    border-bottom: 1px solid #000;
+
+}
+
+.recent-activity-table td h6,
+.recent-activity-table td span{
+    font-size: 0.85rem;
+}
+
+.bar-data{
+    width: 100%;
+    height: 0.65rem;
+    background-color: lightgray;
+    margin: 0.8rem 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.bar-data .red,
+.bar-data .blue,
+.bar-data .purple,
+.bar-data .yellow,
+.bar-data .green{
+    height: 100%;
+    position: absolute;
+}
+.bar-data .red{
+    width: 30%;
+    background-color: red;
+    z-index: 5;
+}
+.bar-data .blue{
+    width: 45%;
+    background-color: blue;
+    z-index: 4;
+}
+.bar-data .purple{
+    width: 60%;
+    background-color: violet;
+    z-index: 3;
+}
+.bar-data .yellow{
+    width: 70%;
+    background-color: orange;
+    z-index: 2;
+}
+.bar-data .green{
+    width: 82%;
+    background-color: green;
+    z-index: 1;
+}
+.taffic-data{
+    margin: 0.4rem 0;
+}
+
+.bar-graphs-ver{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.bar-graphs-num{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar-graphs-num .bar-num{
+    margin: 0 0.88rem;
+}
+
+.bar-graphs-ver .bar{
+    height: 90%;
+    width: 0.7rem;
+    background-color: lightgray;
+    margin: 0.85rem;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar-graphs-ver .b1::after{
+    content: "";
+    width:  100%;
+    background: green;
+    height: 75%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bar-graphs-ver .b2::after{
+    content: "";
+    width:  100%;
+    background: green;
+    height: 35%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bar-graphs-ver .b3::after{
+    content: "";
+    width:  100%;
+    background: green;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bar-graphs-ver .b4::after{
+    content: "";
+    width:  100%;
+    background: green;
+    height: 65%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bar-graphs-ver .b5::after{
+    content: "";
+    width:  100%;
+    background: green;
+    height: 82%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bar-graphs-ver .b6::after{
+    content: "";
+    width:  100%;
+    background: green;
+    height: 45%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bar-graphs-ver .b7::after{
+    content: "";
+    width:  100%;
+    background: green;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+}
